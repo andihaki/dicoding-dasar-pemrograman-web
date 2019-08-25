@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style></style>
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <body>
+    <header>
+      <div class="welcome-message">Selamat Datang di Website Pribadi Andi</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#portofolio">Portofolio</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="content">
+      <div class="main-content">
+        <h2>Andi Hakim Arif</h2>
+        <img
+          src="https://media.licdn.com/dms/image/C5103AQHQBArXTN7LvQ/profile-displayphoto-shrink_200_200/0?e=1572480000&v=beta&t=YAyek1pro7jfAKnxyJpGyCZkkahyaA_cvtG9hqLsleA"
+          alt="profile"
+        />
+      </div>
+      <div class="description-content">
+        <p>
+          Saya fullstack web developer sejak awal 2018. Sebelumnya bekerja
+          sebagai team leader & admin support untuk sebuah perusahaan
+          multinasional. Teknologi yang saya gunakan sehari-hari CentOS, Nginx,
+          Apache, PHP, Laravel, Python, MariaDb, Ms SQL Server, jQuery,
+          Bootstrap. Di luar pekerjaan (weekend & after office hour) saya
+          mempelajari teknologi terbaru seperti ReactJs, GraphQL, Golang, Rust,
+          Apollo GraphQL, Redux, NodeJs, GatsbyJs, NextJs.
+        </p>
+        <p>
+          Untuk obrolan lebih jauh lanjut, silahkan kontak email saya:
+          <a href="mailto:andi.hakim.arif@gmail.com"
+            >andi.hakim.arif@gmail.com</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <div class="portofolio" id="portofolio">
+      <ul>
+        <li>
+          <ahref="/TypedJs-di-React-tanpa-library-tambahan/"
+            ><h3>
+              TypedJs di React tanpa library tambahan
+              <span>
+                -
+                2019</span
+              >
+            </h3></a
+          >
+        </li>
+        <li>
+          <ahref="/streetview-ont/"
+            ><h3>
+              Streetview: ONT Monitoring
+              <span>
+                -
+                2018</span
+              >
+            </h3></a
+          >
+        </li>
+        <li>
+          <ahref="/tictactoe-minimax/"
+            ><h3>
+              FreeCodeCamp: TicTacToe with ReactJS &amp; MiniMax Algorithm
+              <span>
+                -
+                2018</span
+              >
+            </h3></a
+          >
+        </li>
+        <li>
+          <ahref="/streetview-availability-platinum-customer/"
+            ><h3>
+              Streetview: Availability Platinum Customer
+              <span>
+                -
+                2018</span
+              >
+            </h3></a
+          >
+        </li>
+        <li>
+          <ahref="/streetview-site-bebas-masalah/"
+            ><h3>
+              Streetview: Site Bebas Masalah
+              <span>
+                -
+                2018</span
+              >
+            </h3></a
+          >
+        </li>
+        <li>
+          <a  FilMania
+              <span>
+                -
+                2018</span
+              >
+            </h3></a
+          >
+        </li>
+        <li>
+          <ahref="/uxindo-dot-com/"
+            ><h3>
+              UXIndo.com
+              <span>
+                -
+                2017</span
+              >
+            </h3></a
+          >
+        </li>
+        <li
+          class="pages__BorderTop-sc-1g7888w-3 hempxP"
+          style="opacity: 1; transform: none;"
+        >
+          <a
+            class="pages__LinkStyled-sc-1g7888w-0 XmLIK"
+            href="/service-level-management/"
+            ><h3>
+              SLM (Service Level Management)
+              <span>
+                -
+                2017</span
+              >
+            </h3></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="https://github.com/andihaki">Github</a>
+        </li>
+        <li>
+          <a href="https://kodebaik.com">Website</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/andihaki">Twitter</a>
+        </li>
+      </ul>
+      Copyright @ 2019
+    </footer>
+
+    <script>
+      window.onscroll = function() {
+        myFunction();
+      };
+
+      const headerElement = document.querySelector("nav");
+      const sticky = headerElement.offsetTop;
+      const contentElement = document.querySelector(".content");
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          headerElement.classList.add("sticky");
+          contentElement.style.paddingTop = "6rem";
+        } else {
+          headerElement.classList.remove("sticky");
+          contentElement.style.paddingTop = 0;
+        }
+      }
+    </script>
+  </body>
+</html>
